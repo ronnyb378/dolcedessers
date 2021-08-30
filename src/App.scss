@@ -4,5 +4,15 @@
 
 .navbar {
   background-color: rgb(0, 68, 65);
-  color: rgb(211, 171, 61);
+  .navbar-brand {
+    color: rgb(211, 171, 61) !important; 
+  }
+  .nav-link {
+    color: rgb(211, 171, 61) !important; 
+  }
+  .dropdown-menu {
+    color: rgb(0, 68, 65) !important; 
+  }
 }
+
+
