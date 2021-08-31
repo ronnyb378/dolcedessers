@@ -1,14 +1,26 @@
 import React from 'react'
-import { Container } from 'react-bootstrap'
+import { Col, Container, Row } from 'react-bootstrap'
 import MenuCard from '../components/MenuCard'
 
 export default function Menu() {
     return (
         <Container className="menu">
-            <MenuCard title="Empanadas"/>
-            <MenuCard title="Strawberries"/>
-            <MenuCard title="Cookies"/>
-            <MenuCard title="Mini Pound Cake"/>
+            <Row>
+                <Col>
+                    <MenuCard title="Empanadas" />
+                </Col>
+                <Col>
+                    <MenuCard title="Strawberries" />
+                </Col>
+            </Row>
+            <Row>
+                <Col>
+                    <MenuCard title="Cookies" />
+                </Col>
+                <Col>
+                    <MenuCard title="Mini Pound Cake" />
+                </Col>
+            </Row>
         </Container>
     )
 }

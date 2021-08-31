@@ -4,7 +4,7 @@ import bouqet from '../images/bouqet.jpg'
 
 export default function MenuCard(props) {
     return (
-        <Card style={{ width: '18rem' }}>
+        <Card>
             <Card.Img variant="top" src={bouqet} />
             <Card.Body>
                 <Card.Title>{props.title}</Card.Title>
