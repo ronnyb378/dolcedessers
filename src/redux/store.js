@@ -1,8 +1,8 @@
 import { combineReducers, createStore } from "redux";
-import { bakingjokes } from "./reducers/bakingjokes";
+import dessert from "./reducers/dessert";
 
 const rootReducer = combineReducers({ 
-    bakingjokes: bakingjokes
+    dessert: dessert
 })
 const store = createStore(rootReducer,
     window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())

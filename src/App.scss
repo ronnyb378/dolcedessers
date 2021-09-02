@@ -10,6 +10,10 @@
   a {
     color: rgb(211, 171, 61) !important;
     text-decoration: none;
+    .shopping-cart {
+      height: 25px;
+      color: rgb(211, 171, 61) !important;
+    }
   }
   .dropdown-menu {
     background-color: rgb(0, 68, 65); 
@@ -24,7 +28,12 @@
 
 .carousel {
   img {
+    // height: 420px;
     width: 100%;
+    .popsicles {
+      position: absolute;
+      clip: rect(0, 100px, 200px, 0);
+    }
   }
 }
 
@@ -40,15 +49,41 @@
   } 
 }
 
-.footer {
-  justify-content:space-around
-  // text-align: center;
+.row {
+  --bs-gutter-x: 0rem
 }
 
-// .menu {
-//   margin: none !important;
-//   width: 400px;
-//   .card {
-//     // height: 300px;
-//   }
-// }
+.footer {
+  justify-content:space-around
+}
+
+.menu{
+  padding: 0px !important;
+  .row{
+    padding: 0px !important;
+    .col {
+      // padding: 0px !important;
+      padding-bottom: 100px;
+    .menu-card {
+      padding: 0px !important;
+      img {
+          // height: 24rem;
+        }
+      .cart-button {
+        width: 100%;
+      }
+      }
+    }
+  }
+  }
+
+.accordion-button {
+  background-color: rgb(13, 73, 70)  ;
+  color: rgb(211, 171, 61) ;
+}
+
+.storeForm {
+  .popsicles {
+    width: 300px;
+  }
+}

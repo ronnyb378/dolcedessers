@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import './App.scss';
 import Foooter from './components/Foooter';
 import Menu from './pages/Menu';
+import Store from './pages/Store.js';
 
 function App() {
   return (
@@ -20,6 +21,10 @@ function App() {
             <Header />
             <Menu />
             <Foooter />
+          </Route>
+          <Route path="/store/strawberries">
+            <Header />
+            <Store />
           </Route>
         </Switch>
       </div>
