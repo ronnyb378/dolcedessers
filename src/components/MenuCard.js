@@ -1,14 +1,15 @@
 import React from 'react'
 import { Card, Button } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
-import bouqet from '../images/bouqet.jpg'
 
 export default function MenuCard(props) {
     const url = "/store/" + props.url
     const dessertDescription = props.dessertDescription
+    const dessertPic = props.dessertPic
+    console.log(dessertPic)
     return (
         <Card className="menu-card">
-            <Card.Img variant="top" src={bouqet} />
+            <Card.Img variant="top" src={dessertPic} />
             <Card.Body>
                 <Card.Title>{props.title}</Card.Title>
                 <Card.Text>

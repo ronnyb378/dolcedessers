@@ -1,13 +1,13 @@
 import React from 'react'
 import { Carousel, Card, Row } from 'react-bootstrap';
 import { useState } from 'react';
-import cupcakesImage from '../images/cupcakes.jpeg'
-import greenGrass from '../images/green.jpg'
-import cookiesBaking from '../images/BakingCookies.mp4'
-import popsicles from '../images/popsicles.jpeg'
+import casinoStrawberries from '../images/projectImg/casinoStrawberry.MOV'
+import popsicles from '../images/projectImg/convertedPhotos/bluePopsicles.jpeg'
+import pinkStrawberries from '../images/projectImg/convertedPhotos/pinkStrawberries.jpeg'
+import whiteCake from '../images/projectImg/convertedPhotos/whiteCake.jpeg'
 
 export default function Home() {
-    
+
     function ControlledCarousel() {
         const [index, setIndex] = useState(0);
 
@@ -16,10 +16,15 @@ export default function Home() {
         };
 
         return (
-            <Carousel activeIndex={index} onSelect={handleSelect}>
+            <Carousel activeIndex={index} onSelect={handleSelect} variant="dark">
                 <Carousel.Item>
                     <img
                         className="d-block popsicles"
+                        src={popsicles}
+                        alt="First slide"
+                    />
+                    <img
+                        className="d-block popsicles background"
                         src={popsicles}
                         alt="First slide"
                     />
@@ -31,7 +36,12 @@ export default function Home() {
                 <Carousel.Item>
                     <img
                         className="d-block"
-                        src={cupcakesImage}
+                        src={pinkStrawberries}
+                        alt="Second slide"
+                    />
+                    <img
+                        className="d-block background"
+                        src={pinkStrawberries}
                         alt="Second slide"
                     />
 
@@ -43,7 +53,12 @@ export default function Home() {
                 <Carousel.Item>
                     <img
                         className="d-block"
-                        src={cupcakesImage}
+                        src={whiteCake}
+                        alt="Third slide"
+                    />
+                    <img
+                        className="d-block background"
+                        src={whiteCake}
                         alt="Third slide"
                     />
 
@@ -63,7 +78,6 @@ export default function Home() {
             <ControlledCarousel />
             <Row className="welcome-row">
                 <Card className="text-white welcome-card">
-                    <Card.Img src={greenGrass} alt="Card image"/>
                     <Card.ImgOverlay>
                         <Card.Title>Welcome!</Card.Title>
                         <Card.Text>
@@ -74,20 +88,13 @@ export default function Home() {
                     </Card.ImgOverlay>
                 </Card>
                 <video autoPlay muted loop>
-                    <source src={cookiesBaking} />
+                    <source src={casinoStrawberries} />
                 </video>
             </Row>
 
-            <div className="events">
+            {/* <div className="events">
                 <h3>Previous Events/ Bouqets done</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non ante id nunc lacinia tristique ac ut felis. Nunc pulvinar sagittis nisi, eu auctor risus accumsan a. Cras id mi nibh. Aenean eget malesuada nisl, sed auctor tellus. In sit amet justo eu mi interdum semper. Nunc ut sem eu magna ullamcorper venenatis non at dui. Fusce eget lorem ornare, placerat nisl sed, ultrices libero. In lacinia a sapien non condimentum. Pellentesque tristique feugiat dui, sed eleifend felis bibendum et. Fusce sagittis tellus lectus, et finibus sapien faucibus ac. Nulla vitae ipsum lacus. Pellentesque volutpat ipsum in quam efficitur, accumsan iaculis diam lobortis. Vivamus vel fringilla eros. Donec ornare purus sed iaculis interdum.</p>
-            </div>
-            {/* <div className="local-restaurants">
-                <h3 className="title">Other local restaurant</h3>
-                <ul>
-                    <li>Restaurant Website</li>
-                    <li>Restauratn Website</li>
-                </ul>
             </div> */}
         </div>
     )
