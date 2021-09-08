@@ -1,6 +1,6 @@
 import React from 'react'
 import CartForm from '../components/CartForm';
-import popsicles from "../images/popsicles.png";
+import popsicles from "../images/projectImg/convertedPhotos/valentinesTheme.jpeg";
 
 export default function Store() {
     return (

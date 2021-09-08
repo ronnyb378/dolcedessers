@@ -6,6 +6,7 @@ import cartLogo from '../images/shopping-cart-outline.svg'
 export default function Header() {
     return (
         <Navbar collapseOnSelect expand="lg" className="navbar">
+            <hr />
             <Container>
                 <Navbar.Brand href="/">Dolce Desserts</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -29,6 +30,7 @@ export default function Header() {
                     </Nav>
                 </Navbar.Collapse>
             </Container>
+            <hr />
         </Navbar>
     )
 }

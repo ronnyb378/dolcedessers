@@ -4,7 +4,7 @@ import MenuCard from '../components/MenuCard'
 import empanadasPic from '../images/projectImg/convertedPhotos/empanadas.jpeg'
 import casinoStrawberries from '../images/projectImg/convertedPhotos/casinoStrawberries.jpeg'
 import poundcake from '../images/projectImg/convertedPhotos/poundCake.jpeg'
-// import empanadasPic from '../images/projectImg/convertedPhotos/empanadas.jpeg'
+import cookies from '../images/projectImg/convertedPhotos/cookies.jpeg'
 
 export default function Menu() {
     const empanaDes = "Flavourful pastry and filling with choices of homemade Strawberry and Pineapple preserve, or try it with Nutella or Cajeta"
@@ -27,7 +27,7 @@ export default function Menu() {
                     <MenuCard title="Mini Pound Cake" url="poundcake" dessertDescription={poundCakeDes} dessertPic={poundcake}/>
                 </Col>
                 <Col>
-                    <MenuCard title="Cookies" url="cookies" dessertDescription={cookiesDes}/>
+                    <MenuCard title="Cookies" url="cookies" dessertDescription={cookiesDes} dessertPic={cookies}/>
                 </Col>
             </Row>
         </Container>

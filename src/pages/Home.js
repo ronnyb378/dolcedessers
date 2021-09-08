@@ -5,6 +5,7 @@ import casinoStrawberries from '../images/projectImg/casinoStrawberry.MOV'
 import popsicles from '../images/projectImg/convertedPhotos/bluePopsicles.jpeg'
 import pinkStrawberries from '../images/projectImg/convertedPhotos/pinkStrawberries.jpeg'
 import whiteCake from '../images/projectImg/convertedPhotos/whiteCake.jpeg'
+import BreadPuns from '../components/BreadPuns';
 
 export default function Home() {
 
@@ -29,8 +30,7 @@ export default function Home() {
                         alt="First slide"
                     />
                     <Carousel.Caption>
-                        <h3>First slide label</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        <h3>It's the little things</h3>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -46,8 +46,7 @@ export default function Home() {
                     />
 
                     <Carousel.Caption>
-                        <h3>Second slide label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <h3>Quality ingredeints</h3>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -63,10 +62,7 @@ export default function Home() {
                     />
 
                     <Carousel.Caption>
-                        <h3>Third slide label</h3>
-                        <p>
-                            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-                        </p>
+                        <h3>Quality products</h3>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
@@ -85,6 +81,7 @@ export default function Home() {
                             additional content. This content is a little bit longer.
                         </Card.Text>
                         <Card.Text>Maybe a link button to the About Us page</Card.Text>
+                        <BreadPuns />
                     </Card.ImgOverlay>
                 </Card>
                 <video autoPlay muted loop>
